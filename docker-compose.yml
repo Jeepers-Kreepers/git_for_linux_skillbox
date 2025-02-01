@@ -1,0 +1,7 @@
+
+services:
+  angular_motor_speed:
+    image: model_dc_motor
+    # command: python3 model_dc_motor.py / вызовет ошибку, т.к файл будет закрыт до того как пользователь введет данные
+    tty: true                 # дает возможность подключиться к терминалу контейнера
+    stdin_open: true          # дает возможность отправлять команды в контейнер
